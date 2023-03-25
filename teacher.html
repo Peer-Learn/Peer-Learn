@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+       
+    }
+     body{
+        display: flex;
+        flex-direction: column;
+        font-family: Arial;
+        margin: 0;
+    }
+    header{
+        background-color: rgb(44, 40, 36);
+        display: flex;
+        align-items: center;
+      
+
+        }
+       
+    .ul{
+        display: flex;
+        margin: 0;
+        list-style-type: none;
+        padding: 10px 0px ;
+        color: azure;
+    }
+    .logo{
+        display: flex;
+        
+        margin: 0px  auto;
+        color: azure;
+    }
+    li{
+        padding: 10px;
+    } 
+  
+    .main{
+        display: flex;
+    }
+.box{
+    display: flex;
+    /* justify-content: flex-start; */
+    justify-content:center ;
+    flex-wrap: wrap;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #eee;
+   flex-basis:32%;
+    max-width: 300px;
+    padding:10px ;
+    margin: 5px;
+}
+.img{
+    width: 100%;
+    
+}
+img{
+    width: 200px;
+    
+}
+h2{
+    margin: 5px 0px 10px;
+}
+.call-to-action{
+    align-self: flex-start;
+    margin-top: 5px;
+}
+.call-to-action a{
+    display: flex;
+    padding: 8px;
+    background-color: yellow;
+    
+}
+/* aside{
+    flex-grow: 0;
+    flex-shrink: 0;
+flex-basis: 20vw;
+background-color: bisque;
+padding:10px;
+
+}
+aside ul{
+    list-style-type: none;
+}
+aside li{
+    border-bottom: 2px solid gray;
+
+} */
+ li a{
+    margin:10px 5px 0px 10px;
+    display: block;
+    padding: 10px;
+    
+}
+ul{
+    padding: 0;
+}
+/* aside img{
+    width: 100%;
+    margin: 20px 0px;
+} */
+article{
+    padding: 10px;
+}
+
+@media screen and (max-width:700px) {
+    aside{
+       flex-basis: 20vw;
+         }
+         .box{
+    flex-basis: 48%;
+}
+header{
+    /* flex-direction: column; */
+}
+}
+@media screen and (max-width:300px) {
+    header{
+       flex-direction: column; 
+     }
+     .logo{
+        order: -1;
+    }
+     .box{
+        flex-basis: 30%;
+     }
+     .container{
+        /* flex-basis: 20%;
+        max-width: 300px; */
+flex-direction: column;
+align-items: center;
+     }
+    
+    .main{
+        flex-direction: column;
+    }
+    article{
+        order: -1;
+        
+    }
+    h1{
+        text-align: center;
+    }
+   }
+   .teach-intro,ul,li{
+        list-style-type: none;
+    }
+.sociallink{
+    width: 24px;
+}
+a.mediahome{
+color: aliceblue;
+text-decoration: none;
+}
+.mediahome:hover{
+    color: yellow;
+}
+button{
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: transparent;
+}
+button
+.buttonread{
+    border-radius: 50%;
+    background-color: orange;
+    text-decoration: none;
+}
+
+
+</style>
+<body>
+    <header>
+        <nav class="media">
+            <ul class="ul">
+                <li><a href="" class="mediahome">Home</a></li>
+                <li><a href="" class="mediahome">About</a></li>
+                <li><a href=""class="mediahome">Contact</a></li>
+            </ul>
+        </nav>
+    <div class="logo"><a href=""><img src="logochange.png"alt="error"height="120px"width="100px"></a></div>
+    <nav class="social">
+        <ul class="ul">
+            <li><a href="#"><img class="sociallink" src="face.png" width="16px" alt="error"></a></li>
+            <li><a href="https://instagram.com/peer_learn?igshid=YmMyMTA2M2Y="target="_blank"><img class="sociallink" src="insta.png" alt="error"></a></li>
+            <li><a href="#"><img class="sociallink" src="you.png"alt="error"></a></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="main">
+        <!-- <aside>
+            <ul>
+                <li>some link</li>
+                <li>some link</li>
+                <li>some link</li>
+            </ul>
+            <img class="img" src="/computer.jpg" alt="">
+        </aside> -->
+        <article class="">
+            <h1>Mathematics faculty</h1>
+            <p>Coaching classes provide students with daily mock tests and subject wise question papers and practice material. This helps students practice their understanding and application of various concepts. </p>
+            <h3>we are teaching about</h3>
+<div class="box">
+    <div class="container">
+        <div class="img" >
+            <img class="tech"  src="expert teacher1.webp" alt="">
+        </div>
+        <div class="teach-title">
+           <h2>Abhilasha jain</h2>
+        </div>
+        <div class="teach-intro">
+           <ul class="teacher">
+            <li style="color: black;">9+ years of experience in teaching.</li>
+           <li style="color: black;">Subject: maths</li>
+        <li style="color: black;">Qualification: MCS(maths)</li>
+        </ul>
+        </div>
+        <div class="call-to-action">
+            <button><a class="buttonread" href="#">read more</a></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="img">
+            <img src="abhinav.webp" alt="">
+        </div>
+        <div class="teach-title">
+           <h2>Abhinav shukla</h2>
+        </div>
+        <div class="teach-intro">
+           <ul>
+            <li style="color: black;">12+ years of experience in teaching.</li>
+            <li style="color: black;">Subject: Maths</li>
+            <li style="color: black;">Qualification: B.tech(cs)</li>
+           </ul> 
+        </div>
+        <!-- <div class="call-to-action">
+            <a href="">read more</a>
+        </div> -->
+        <div class="call-to-action">
+            <button><a class="buttonread" href="#">read more</a></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="img">
+            <img src="expert teacher1.webp" alt="">
+        </div>
+        <div class="teach-title">
+           <h2>Sayantani shukla</h2>
+        </div>
+        <div class="teach-intro">
+           <ul>
+            <li style="color: black;">20+ years of experience in teaching.</li>
+            <li style="color: black;">Subject: Maths</li>
+            <li style="color: black;">Qualification: BE.(IT)</li>
+           </ul>
+        </div>
+        <!-- <div class="call-to-action">
+            <a href="">read more</a>
+            
+        </div> -->
+        <div class="call-to-action">
+            <button><a class="buttonread" href="#">read more</a></button>
+        </div>
+    </div>
+</div>
+        </article>
+
+    </div>
+    <div class="main">
+        
+        <article class="">
+            <h1>Physics faculty</h1>
+            <p>Coaching classes provide students with daily mock tests and subject wise question papers and practice material. This helps students practice their understanding and application of various concepts. </p>
+            <h3>we are teaching about</h3>
+<div class="box">
+    <div class="container">
+        <div class="img" >
+            <img class="tech"  src="expert teacher1.webp" alt="">
+        </div>
+        <div class="teach-title">
+           <h2>Abhilasha jain</h2>
+        </div>
+        <div class="teach-intro">
+           <ul class="teacher">
+            <li style="color: black;">9+ years of experience in teaching.</li>
+           <li style="color: black;">Subject: Physics</li>
+        <li style="color: black;">Qualification: Msc(Physics)</li>
+        </ul>
+        </div>
+        <!-- <div class="call-to-action">
+            <a href="">read more</a>
+        </div> -->
+        <div class="call-to-action">
+            <button><a class="buttonread" href="#">read more</a></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="img">
+            <img src="abhinav.webp" alt="">
+        </div>
+        <div class="teach-title">
+           <h2>Abhinav shukla</h2>
+        </div>
+        <div class="teach-intro">
+           <ul>
+            <li style="color: black;">12+ years of experience in teaching.</li>
+            <li style="color: black;">Subject: Nuclear Physics</li>
+            <li style="color: black;">Qualification: B.tech</li>
+           </ul> 
+        </div>
+       
+        <div class="call-to-action">
+            <button><a class="buttonread" href="#">read more</a></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="img">
+            <img src="expert teacher1.webp" alt="">
+        </div>
+        <div class="teach-title">
+           <h2>Sayantani shukla</h2>
+        </div>
+        <div class="teach-intro">
+           <ul>
+            <li style="color: black;">20+ years of experience in teaching.</li>
+            <li style="color: black;">Subject: Thermodynamics</li>
+            <li style="color: black;">Qualification: P.HD</li>
+           </ul>
+        </div>
+        <!-- <div class="call-to-action">
+            <a href="">read more</a>
+            
+        </div> -->
+        <div class="call-to-action">
+            <button><a class="buttonread" href="#">read more</a></button>
+        </div>
+    </div>
+</div>
+        </article>
+
+    </div>
+
+    <div class="main">
+        
+        <article class="">
+            <h1>Chemistry faculty</h1>
+            <p>Coaching classes provide students with daily mock tests and subject wise question papers and practice material. This helps students practice their understanding and application of various concepts. </p>
+            <h3>we are teaching about</h3>
+<div class="box">
+    <div class="container">
+        <div class="img" >
+            <img class="tech"  src="expert teacher1.webp" alt="">
+        </div>
+        <div class="teach-title">
+           <h2>Abhilasha jain</h2>
+        </div>
+        <div class="teach-intro">
+           <ul class="teacher">
+            <li style="color: black;">9+ years of experience in teaching.</li>
+           <li style="color: black;">Subject: Chemistry</li>
+        <li style="color: black;">Qualification: MCS</li>
+        </ul>
+        </div>
+        <!-- <div class="call-to-action">
+            <a href="">read more</a>
+        </div> -->
+        <div class="call-to-action">
+            <button><a class="buttonread" href="#">read more</a></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="img">
+            <img src="abhinav.webp" alt="">
+        </div>
+        <div class="teach-title">
+           <h2>Abhinav shukla</h2>
+        </div>
+        <div class="teach-intro">
+           <ul>
+            <li style="color: black;">12+ years of experience in teaching.</li>
+            <li style="color: black;">Subject: Organic Chemistry</li>
+            <li style="color: black;">Qualification: B.tech</li>
+           </ul> 
+        </div>
+        <!-- <div class="call-to-action">
+            <a href="">read more</a>
+        </div> -->
+        <div class="call-to-action">
+            <button><a class="buttonread" href="#">read more</a></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="img">
+            <img src="expert teacher1.webp" alt="">
+        </div>
+        <div class="teach-title">
+           <h2>Sayantani shukla</h2>
+        </div>
+        <div class="teach-intro">
+           <ul>
+            <li style="color: black;">20+ years of experience in teaching.</li>
+            <li style="color: black;">Subject: Environmental Chemistry</li>
+            <li style="color: black;">Qualification: B.tech</li>
+           </ul>
+        </div>
+        <!-- <div class="call-to-action">
+            <a href="">read more</a>
+            
+        </div> -->
+        <div class="call-to-action">
+            <button><a class="buttonread" href="#">read more</a></button>
+        </div>
+    </div>
+</div>
+        </article>
+
+    </div>
+    <div class="main">
+        
+        <article class="">
+            <h1>Reorded Lecture</h1>
+            <!-- <p>Coaching classes provide students with daily mock tests and subject wise question papers and practice material. This helps students practice their understanding and application of various concepts. </p> -->
+            <!-- <h3>we are teaching about</h3> -->
+<div class="box">
+    <div class="container">
+        <div class="img" >
+            <iframe width="280" height="315" src="https://www.youtube.com/embed/iOwi85y9oSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="teach-title">
+           <h2>Mathematics</h2>
+        </div>
+        <!-- <div class="teach-intro">
+           <ul class="teacher">
+            <li>9+ years of experience in teaching.</li>
+           <li>Subject: Physics</li>
+        <li>Qualification: Msc(Physics)</li>
+        </ul>
+        </div> -->
+        <!-- <div class="call-to-action">
+            <a href="">read more</a>
+        </div> -->
+        <!-- <div class="call-to-action">
+            <button><a class="buttonread" href="#">read more</a></button>
+        </div> -->
+    </div>
+    <div class="container">
+        <div class="img">
+            <iframe width="280" height="315" src="https://www.youtube.com/embed/0nCPA4XcNDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="teach-title">
+           <h2>Physics</h2>
+        </div>
+        <!-- <div class="teach-intro">
+           <ul>
+            <li>12+ years of experience in teaching.</li>
+            <li>Subject: Nuclear Physics</li>
+            <li>Qualification: B.tech</li>
+           </ul> 
+        </div>
+       
+        <div class="call-to-action">
+            <button><a class="buttonread" href="#">read more</a></button>
+        </div> -->
+    </div>
+    <div class="container">
+        <div class="img">
+            <iframe width="280" height="315" src="https://www.youtube.com/embed/kEUlG3_Ouxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="teach-title">
+           <h2>Chemistry</h2>
+        </div>
+        <!-- <div class="teach-intro">
+           <ul>
+            <li>20+ years of experience in teaching.</li>
+            <li>Subject: Thermodynamics</li>
+            <li>Qualification: P.HD</li>
+           </ul>
+        </div> -->
+        <!-- <div class="call-to-action">
+            <a href="">read more</a>
+            
+        </div> -->
+        <!-- <div class="call-to-action">
+            <button><a class="buttonread" href="#">read more</a></button>
+        </div> -->
+    </div>
+</div>
+        </article>
+
+    </div>
+
+ <!-- <style>
+       .footer{
+        display: flex;
+        background-color: black;
+        /* height: 250px; */
+        width: 100%;
+       }
+       div.mains{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: flex-start;
+       }
+       .foot{
+        color: yellow;
+        flex-direction: row;
+        margin: 0px;
+        padding: 20px;
+        float: right;
+       }
+      div.copy{
+        color: white;
+        display: flex;
+        justify-content: center;
+        clear: both;
+      }
+      .foot,.line{
+        list-style-type: disc;
+      }
+      .p{
+        color: white;
+        clear: both;
+      }
+      .footimg{
+        display: flex;
+        flex-direction: row;
+        float: left;
+      }
+    </style>
+
+    <div class="footer">
+        <div class="mains">
+        <img src="/logochange.png" alt="" class="footimg">
+        <div class="p">peer learn is an inovative edtech platform offering personalized learning experience with adaptive assessments, interactive, lessons, and real-time progress tracking for students</div>
+        <ul class="foot">
+            <li class="line">Read blog</li>
+            <li class="line">Expert tutor</li>
+            <li class="line">Meet our team</li>
+            <li class="line">FAQ'S</li>
+        </ul>
+        <ul class="foot">
+            <li class="line">about us</li>
+            <li class="line">features</li>
+            <li class="line">courses</li>
+            <li class="line">testimonials</li>
+            <li class="line">contact us</li>
+        </ul>
+        </div>
+        <div class="copy">Copyright@Peer learn 2023</div>
+    </div>  -->
+   <style>
+    footer{
+        background-color: black;
+        display: flex;
+    }
+ 
+   .footul{
+    color: rgb(203, 217, 13);
+    /* flex-direction: row; */
+    /* margin-left: 50px; */
+   }
+   .footulul,li{
+    /* display: flex; */
+    color: rgb(219, 212, 14);
+    /* margin-left: 50px; */
+    /* padding: 0; */
+    margin: 0;
+   }
+   .line{
+    /* list-style-type: disc; */
+    margin: 0;
+    padding: 10px;
+   }
+   .logobox,.p{
+    color: white;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 150px;
+   }
+   .logobox{
+    float: left;
+    
+   }
+   .p{
+    margin-left: 50px;
+   }
+.ulbox{
+    
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid #302b2b; */
+   flex-basis:32%;
+    max-width: 100px;
+    padding:10px ;
+    margin: 5px;
+}
+.libox{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid #201e1e; */
+   flex-basis:32%;
+    max-width: 100px;
+    padding:10px ;
+    margin: 5px;
+}
+.footulul{
+    margin-top: 20px;
+}
+@media screen and (max-width:700px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .logobox{
+   /* display: flex; */
+   float: right;
+    }
+    .footul{
+        display: flex;
+        /* margin-right: 500px; */
+        /* clear: both; */
+        flex-direction: column;
+        margin-right: 1500px;
+        margin-top: 20px;
+        /* margin-left: 200px; */
+    }
+    .footulul{
+    color: rgb(219, 212, 14);
+    /* margin-left: 20px; */
+    display: flex;
+    flex-direction: column;
+    margin-right: 500px;
+    margin-top: 20px;
+   }
+}
+.boxx{
+    margin-left: 80px;
+    display: flex;
+}
+   </style>
+    <footer>
+        <div class="logobox"><div class="footlogo"><a href=""><img src="logochange.png"alt="error"height="110px"width="100px"></a>
+            <div class="p">peer learn is an inovative edtech platform offering personalized learning experience with adaptive assessments, interactive, lessons, and real-time progress tracking for students</div></div></div>
+      <div class="boxx"><div class="ulbox">
+        <nav class="footmedia">
+            <ul class="footul">
+                <li class="line">Read blog</li>
+                <li class="line">Expert tutor</li>
+                <li class="line">Meet our team</li>
+                <li class="line">FAQ'S</li>
+            </ul>
+        </nav></div>
+<div class="libox">
+     <nav class="footsocial">
+        <ul class="footulul">
+            <li class="line">about us</li>
+            <li class="line">features</li>
+            <li class="line">testimonial</li>
+            <li class="line">contact us</li>
+        </ul>
+    </nav></div></div>
+    </footer>
+       
+</body>
+</html>
